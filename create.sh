@@ -1,0 +1,16 @@
+day_begin_LETS_START.sh
+Desktop
+Documents
+Downloads
+node_modules
+Nordic-darker
+Nordic-darker.tar.xz
+pg.sh
+Pictures
+sc_iitm.sh
+snap
+SQL
+sql_git
+sql_practice_mysolution.txt
+Templates
+Videos
