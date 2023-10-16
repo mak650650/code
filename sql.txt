@@ -1,0 +1,47 @@
+SELECT *
+FROM student
+-- Write a function to calculate number of student in x department
+
+CREATE OR REPLACE FUNCTION student_count(dpt_name VARCHAR(20))
+RETURNS INT
+LANGUAGE plpgsql
+AS
+
+$$
+DECLARE stud_count INT;
+BEGIN
+	SELECT count(*) INTO stud_count 
+	FROM student
+	WHERE dept_name=dpt_name;
+	RETURN stud_count;
+END;
+$$;
+--Write a function to get the all attributes of x department and create a view and make a materilized one too.
+
+CREATE OR REPLACE FUNCTION student_based_on_dept(dpt_name VARCHAR(20))
+RETURNS TABLE(
+	id VARCHAR(5),
+	name VARCHAR(20),
+	dept_name VARCHAR(20),
+	tot_cred NUMERIC(3))
+LANGUAGE plpgsql
+AS
+
+$$
+BEGIN
+	RETURN QUERY
+	SELECT student.id ,student.name ,student.dept_name ,student.tot_cred
+	FROM student
+	WHERE student.dept_name=student_based_on_dept.dpt_name;
+END;
+$$;
+
+
+
+CREATE OR REPLACE VIEW student_Math_view AS
+SELECT * FROM student_based_on_dept('Math')
+
+SELECT * FROM student_Math_view
+
+
+
