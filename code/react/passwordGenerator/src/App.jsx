@@ -35,7 +35,7 @@ export default function App() {
   return (
     <>
       <div className="w-full max-w-2xl rounded-lg shadow-lg mx-auto my-10 p-1 ">
-         <div className="flex flex-wrap flex-col shadow rounded-lg  bg-gray-700 text-white "
+         <div className="flex flex-wrap flex-col shadow rounded-t-lg  bg-gray-700 text-white "
          >
           <h1 className="text-center text-3xl font-mono font-bold mb-5">Password Generator</h1>
             <div className="flex max-md:flex-col max-md:gap-2 text-md mx-2 gap-x-4 mb-2">
@@ -60,17 +60,17 @@ export default function App() {
                 value={length}
                 className="cursor-pointer"
                 onChange={(e) => {setLength(e.target.value)}}/>
-                <label className="text-md font-mono font-bold">Length:{length}</label>
+                <label className="text-md font-mono font-bold mt-1">Length:{length}</label>
               </div>
-              <div className="flex gap-x-1 items-center py-2">
+              <div className="flex gap-x-1 items-center py-1">
                 <input 
                 type="checkbox"
                 defaultChecked={numberAllowed} 
-                className="cursor-pointer"
+                className="cursor-pointer "
                 onChange={()=>{
                   setNumberAllowed((prev)=> !prev)
                 }}/>
-                <label className="text-md  mx-1 font-mono font-bold">Numbers</label>
+                <label className="text-md  mx-1 font-mono font-bold mt-1">Numbers</label>
               </div>
               <div className="flex gap-x-1 items-center py-2">
                 <input 
@@ -80,13 +80,18 @@ export default function App() {
                 onChange={()=>{
                   setcharcterAllowed((prev)=> !prev)
                 }}/>
-                <label className="text-md  mx-1 font-mono font-bold">Character</label>
+                <label className="text-md  mx-1 font-mono font-bold mt-1">Character</label>
               </div>
               
             </div>
-          
-          <div></div>
-         </div>
+     
+        </div>
+              
+        <div className=" flex bg-slate-100 max-md:text-sm max-md:h-8 rounded-b-lg text-black font-mono font-semibold border border-white mt-3 h-12 justify-center gap-1">
+            <span className="pt-3 max-md:pt-2">Created by: </span>
+            <img src="./public/icons8-github.svg"/>
+            <a href="https://github.com/mak650650" className="pt-3 max-md:pt-2">Akash mishra</a>
+        </div>
       </div>
     </>
   )
