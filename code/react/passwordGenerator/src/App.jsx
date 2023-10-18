@@ -86,12 +86,14 @@ export default function App() {
             </div>
      
         </div>
-              
-        <div className=" flex bg-slate-100 max-md:text-sm  rounded-b-lg text-black font-mono font-semibold border border-white mt-3 h-12 justify-center gap-1">
-            <span className="pt-3 max-md:pt-2">Created by: </span>
-            <a href="https://imgur.com/Nkt2gd3"><img src="https://i.imgur.com/Nkt2gd3.png" title="source: imgur.com" /></a>
-            <a href="https://github.com/mak650650" className="pt-3 max-md:pt-2">Akash mishra</a>
-        </div>
+        <a href="https://github.com/mak650650" className="pt-3 max-md:pt-2">
+          <div className=" flex bg-slate-100 max-md:text-sm  rounded-b-lg text-black font-mono font-semibold border border-white mt-3 h-12 justify-center gap-1">
+              <span className="pt-3 max-md:pt-2">Created by: </span>
+              <a href="https://imgur.com/Nkt2gd3"><img src="https://i.imgur.com/Nkt2gd3.png" title="source: imgur.com" /></a>
+              <span className="pt-3 max-md:pt-2">Akash Mishra</span>
+          </div>
+        </a>   
+        
       </div>
     </>
   )
