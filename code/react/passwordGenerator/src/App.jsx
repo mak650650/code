@@ -38,7 +38,7 @@ export default function App() {
          <div className="flex flex-wrap flex-col shadow rounded-lg  bg-gray-700 text-white "
          >
           <h1 className="text-center text-3xl font-mono font-bold mb-5">Password Generator</h1>
-            <div className="flex text-md mx-2 gap-x-4 mb-2">
+            <div className="flex max-md:flex-col max-md:gap-2 text-md mx-2 gap-x-4 mb-2">
                 <input 
                 id="password_input"
                 type="text" 
@@ -47,11 +47,11 @@ export default function App() {
                 className="outline-none w-full py-1 px-3 rounded-lg  font-mono text-black"
                 readOnly
                 ref={passwordRef} />
-                <button className=" font-mono font-bold border bg-slate-300 text-black rounded-lg px-4 active:bg-slate-400" onClick={passwordGenerator}>Generate</button>
-                <button className=" font-mono font-bold border bg-slate-300 text-black rounded-lg px-6 active:bg-slate-400" onClick={copyPasswordToClipboard}>Copy</button>
+                <button className=" font-mono max-md:mx-20 font-bold border bg-slate-300 text-black rounded-lg px-4 active:bg-slate-400" onClick={passwordGenerator}>Generate</button>
+                <button className=" font-mono max-md:mx-20 font-bold border bg-slate-300 text-black rounded-lg px-6 active:bg-slate-400" onClick={copyPasswordToClipboard}>Copy</button>
 
             </div>
-            <div className="flex justify-evenly max-md:flex-col text-md text-emerald-400 gap-x-6 mx-1 ">
+            <div className="flex justify-evenly max-md:flex-col  max-md:items-center text-md text-emerald-400 gap-x-6 mx-1 ">
               <div className="flex gap-x-1  py-2">
                 <input 
                 type="range" 
