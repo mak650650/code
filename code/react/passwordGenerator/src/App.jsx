@@ -89,7 +89,7 @@ export default function App() {
               
         <div className=" flex bg-slate-100 max-md:text-sm max-md:h-8 rounded-b-lg text-black font-mono font-semibold border border-white mt-3 h-12 justify-center gap-1">
             <span className="pt-3 max-md:pt-2">Created by: </span>
-            <img src="./public/github.svg" alt="github" />
+            <img src="./public/github.svg"/>
             <a href="https://github.com/mak650650" className="pt-3 max-md:pt-2">Akash mishra</a>
         </div>
       </div>
