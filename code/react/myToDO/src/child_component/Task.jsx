@@ -14,12 +14,12 @@ export default function Task(props){
 
                 <div className="flex justify-end  bg-transparent absolute right-0 px-6 gap-4 ">
                     
-                    <button>
-                        <img className="h-6" src='./public/edit.png'/>
+                    <button onClick={()=>{alert('edit')}}>
+                        <img className="h-6" src='https://i.imgur.com/eqyurQy.png/'/>
                     </button>
                     <div className="flex ">
-                        <button>
-                            <img className="h-10" src='./public/delete.png'/>
+                        <button onClick={()=>{alert('delete')}}>
+                            <img className="h-10" src='https://i.imgur.com/JBTuQW4.png'/>
                         </button>
                         <label className="bg-transparent border-gray-600  text-red-300 rounded-3xl pl-4 pt-2 text-md font-sans font-bold " >
                             i
