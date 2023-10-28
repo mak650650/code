@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"ac179e69d1fc0327","type":"text","text":"<h1>CONTROL</h1>","x":-500,"y":-317,"width":294,"height":60,"color":"1"},
+		{"id":"0572c1e672a5ed92","type":"text","text":"<h1>DISCIPLIINE</h1>","x":-500,"y":373,"width":294,"height":50,"color":"4"},
+		{"id":"3e09e3702a133e17","type":"text","text":"<h1>VALUES</h1>","x":-375,"y":40,"width":294,"height":50,"color":"3"},
+		{"id":"244a07bf147af2c7","type":"text","text":"<h1>VISION<h1>","x":-412,"y":-560,"width":272,"height":60,"color":"6"},
+		{"id":"ac70517db8511a6e","type":"file","file":"levels/<(till 8-36).md","x":400,"y":13,"width":440,"height":307,"color":"3"},
+		{"id":"78d7a20d3ec6d9cd","type":"file","file":"levels/>().md","x":-81,"y":-301,"width":441,"height":314,"color":"1"},
+		{"id":"3400b3b85d449bbc","type":"file","file":"levels/'().md","x":-61,"y":282,"width":401,"height":282,"color":"4"},
+		{"id":"b19addf943b4da79","type":"file","file":"levels/<>().md","x":400,"y":-574,"width":360,"height":214,"color":"6"},
+		{"id":"6fd108cec749f84a","type":"text","text":"<h3>Updates</h3>\nweek 1 -><a href=\"obsidian://open?vault=Obsidian%20Vault&file=Level%201%3D%3EDiscipline%2FWeek%201%2FDay%201\">page</a>\n\nweek2 ->","x":-678,"y":490,"width":450,"height":154}
+	],
+	"edges":[
+		{"id":"47f0fecd86143546","fromNode":"0572c1e672a5ed92","fromSide":"top","toNode":"3e09e3702a133e17","toSide":"bottom"},
+		{"id":"b8dbd7967a030354","fromNode":"0572c1e672a5ed92","fromSide":"right","toNode":"3400b3b85d449bbc","toSide":"left"},
+		{"id":"b2c6c2bf2a9eaeed","fromNode":"3e09e3702a133e17","fromSide":"right","toNode":"ac70517db8511a6e","toSide":"left"},
+		{"id":"6facd9b0e8dda44f","fromNode":"3e09e3702a133e17","fromSide":"top","toNode":"ac179e69d1fc0327","toSide":"bottom"},
+		{"id":"98b3e3ed2d0cd7fd","fromNode":"ac179e69d1fc0327","fromSide":"right","toNode":"78d7a20d3ec6d9cd","toSide":"left"},
+		{"id":"9b7be56310b71222","fromNode":"ac179e69d1fc0327","fromSide":"top","toNode":"244a07bf147af2c7","toSide":"bottom"},
+		{"id":"8c4bd6a7bbedf1b5","fromNode":"244a07bf147af2c7","fromSide":"right","toNode":"b19addf943b4da79","toSide":"left"}
+	]
+}

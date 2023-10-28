@@ -1,0 +1,13 @@
+-- Write a SQL statement to find the names of teams that have played more than 3 matches.[Database: FLIS] flisdb:
+
+--Write an SQL statement to find the first name, last name of the faculty of the department having 
+--department code as 'ME' and
+--who have issued at least one book, such that there are no duplicate firstname-lastname pairs.{LIb}
+
+--Write an SQL statement to find the number of book-titles issued on 11th August 2021.[Database: LIS] lisdb:
+
+--Write a SQL statement to find the names of faculty 
+--(faculty_fname, faculty_lname) who did not issue any book.[Database: LIS] lisdb:
+
+--Write a SQL statement to find the unique book titles
+--which are issued to 'PG' students but not to 'UG' students .[Database: LIS] lisdb:

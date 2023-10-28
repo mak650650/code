@@ -1,0 +1,7 @@
+- => Regular file
+d => directory 
+l => symbolic link
+c => character (terminal)
+b => Block files(hard drives)
+s => socket file (process and file with two way communitcation)
+p => namedpipe (process behind and one way communication)
